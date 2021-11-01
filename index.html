@@ -131,12 +131,12 @@
     const urlSpan = document.getElementById('oculus_url');
     const currentUrl = window.location.href;
     const pos = currentUrl.lastIndexOf('/');
-    const goUrl = currentUrl.substr(0, pos + 1) + 'go.html?room=' + roomname;
+    const goUrl = currentUrl.substr(0, pos + 1) + 'go_chrome.html?room=' + roomname;
     const a = '<a target="_blank" href="' + goUrl + '">' + goUrl + '</a>';
     urlSpan.innerHTML = a;
 
     const jupmSpan = document.getElementById('jumb_page');
-    const jumpUrl = currentUrl.substr(0, pos + 1) + 'g.html';
+    const jumpUrl = currentUrl.substr(0, pos + 1) + 'go_chrome.html';
     let str = 'Or, please open ' + '<a target="_blank" href="' + jumpUrl + '">' + jumpUrl + '</a>';
     str = str + ' with Oculus Go Browser and type room: "' + roomname + '" , then submit.';
     jupmSpan.innerHTML = str;
